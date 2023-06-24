@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    padding: 0;
+    color: white;
+    background-color: black;
+
+  }
+  
+ header{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    
+ }
+header p {
+    /* margin: 50px; */
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+}
+
+header div{
+    display: flex;
+}
+
+
+ #name, #email, #password, #confirmPassword{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: black;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    width: 70%;
+    height: 50px;
+    font-size: medium;
+    color: white;
+ }
+
+ #root{
+    margin: 0 25px 20px 250px;
+ }
+ /* #signupForm{
+    margin: 20px 25px 20px 25px;
+ } */
+
+  .page {
+    display: none;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .success {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  button{
+    background-color: white;
+    height: 40px;
+    width: 150px;
+  }
+ 
+ #profilePage{
+    gap: 300px;
+    width: 50%;
+    font-size: large;
+    font-weight: 0px;
+    padding: 30px 30px 3px 30px;
+    margin: 20px 25px 25px 102px;
+    /* padding: 20px ; */
+ }
+ #profileDetails{
+    gap: 300px;
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+ }

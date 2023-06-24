@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign_up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Header</p>
+        <div>
+            <p>Sign Up</p>
+            <p>Profile</p>
+        </div>
+    </header>
+  <div id="root">
+    <!-- Signup Page -->
+    <div id="signupPage" class="page">
+      <h2 style="font-size:xx-large;">Sign Up</h2>
+      <div id="signupForm">
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" id="name" placeholder="Full Name" required>
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" placeholder="Email" required>
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <button onclick="signup()">Sign Up</button>
+        <div id="signupError" class="error"></div>
+      </div>
+      <div id="signupSuccess" class="success"></div>
+    </div>
+  
+    <!-- Profile Page -->
+    <div id="profilePage" class="page">
+      <h2>Profile</h2>
+      <div id="profileDetails">
+        <div><strong> Full   Name  :</strong> <span id="profileName"></span></div>
+        <div><strong>Email :</strong> <span id="profileEmail"></span></div>
+        <div><strong>Password :</strong> <span id="profilePassword"></span></div>
+      </div>
+      <button id="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
